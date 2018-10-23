@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#packt").click(function(){
+                $(".pubman").show(200)
+            })
+
+            $("#packtpub").click(function(){
+                $(".pubman").hide(350)
+            })
+        })
+    </script>
+    <style>
+    .pubman{
+        margin:5px;
+        padding: 7px;
+        border: 3px dashed navy;
+        color: lime;
+        width: 110px;
+        height: 40px;
+        display: inline;
+    }
+    </style>
+</head>
+<body>
+    <br>
+    <div class="pubman">
+        Packt Publishing
+    </div>
+    <input type="button" id="packtpub" value="Click here to Hide">
+    <input type="button" id="packt" value="Click here to Display">
+</body>
+</html>

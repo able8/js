@@ -1,0 +1,14 @@
+gs# npm debugging logs
+npm-debug.log*
+
+# project dependencies
+node_modules
+
+# macOs folder attributes
+.DS_store
+
+# temporary files
+*.tmp
+*~
+
+dist

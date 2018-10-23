@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script type="text/javascript">
+        function rate(cost){
+            this.sellingPrice = cost
+        }
+        function prose(name, company) {
+            this.name = name
+            this.company = company
+            this.rate = rate
+        }
+    </script>
+</head>
+<body>
+    <script type="text/javascript">
+        var y = new prose("JavaScript", "Packt Publishing")
+        y.rate(50)
+        document.write("The name of the book is " + y.name + "<br>")
+        document.write("The name of the publishing company is: " + y.company + "<br>")
+        document.write("The cost of the book is $" + y.sellingPrice + "<br>")
+    </script>
+
+</body>
+</html>
